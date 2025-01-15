@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <!-- ^ Bootstrap -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <!-- ^ main style -->
+    <link rel="stylesheet" href="./css/main.css">
+    <!-- ^ google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Nerko+One&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="home ">
+        <header class="position-relative">
+            <img class="w-100" src="./images/background.png" alt="background image">
+        </header>
+        <nav class="navbar navbar-expand-lg position-sticky top-0  mx-md-auto py-0">
+            <div class="container rounded-4 p-2">
+                <div class="logo">
+                    <h5 class="text-uppercase text-white h4 mb-0"> <img src="./images/logo.png" alt="logo"> game reviews</h5>
+                </div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a role="button" class="nav-link text-white py-2 py-lg-0 active" aria-current="page" name="mmorpg">mmorpg</a>
+                        </li>
+                        <li class="nav-item">
+                            <a role="button" class="nav-link text-white py-2 py-lg-0" name="shooter">shooter</a>
+                        </li>
+                        <li class="nav-item">
+                            <a role="button" class="nav-link text-white py-2 py-lg-0" name="sailing">sailing</a>
+                        </li>
+                        <li class="nav-item">
+                            <a role="button" class="nav-link text-white py-2 py-lg-0" name="permadeath">permadeath</a>
+                        </li>
+                        <li class="nav-item">
+                            <a role="button" class="nav-link text-white py-2 py-lg-0" name="superhero">superhero</a>
+                        </li>
+                        <li class="nav-item">
+                            <a role="button" class="nav-link text-white py-2 py-lg-0" name="pixel">pixel</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <section class="my-5">
+            <div class="container">
+                <div class="row gy-3" id="myData">
+                </div>
+            </div>
+        </section>
+    </div>
+    <div class="details d-none">
+        <div class="container">
+            <header class="text-white d-flex justify-content-between align-items-center">
+                <h1 class="py-4 h3">Details Game</h1>
+                <button class="btn-close btn-close-white"></button>
+            </header>
+            <section id="detData">
+
+            </section>
+        </div>
+    </div>
+    <div class="loading d-none" id="loading">
+        <span class="loader"></span>
+    </div>
+
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script type="module" src="./js/Main.js"></script>
+</body>
+
+</html>
