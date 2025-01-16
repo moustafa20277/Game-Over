@@ -36,7 +36,7 @@ export class Ui {
 
     displayDetails(data){        
         const cartona = `
-            <div class="d-flex mt-4">
+            <div class="d-flex flex-column flex-md-row mt-4">
                 <figure class="col-12 col-md-4 px-3 mb-0"> <img class="w-100" src="${data.thumbnail}" alt="game photo"></figure>
                 <figcaption class="col-12 col-md-8 text-white small px-3">
                     <h3>Title: ${data.title}</h3>
